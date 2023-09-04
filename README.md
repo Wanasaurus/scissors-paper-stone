@@ -1,2 +1,2 @@
 # scissors-paper-stone
-A player versus computer scissors-paper-stone game. This is one of several The Odin Project assignments.
+As part of The Odin Project Foundation course, I created a player versus computer scissors-paper-stone game.
