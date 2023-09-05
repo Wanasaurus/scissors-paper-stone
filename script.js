@@ -1,0 +1,1 @@
+let playerSelection = prompt("Let's play scissors paper stone! Please enter one of three options: scissors, paper, stone");
