@@ -17,5 +17,9 @@ function getComputerChoice() {
 
 const computerSelect = getComputerChoice();
 
+function playRound (playerSelect, computerSelect) {
+    
+}
+
 
 
