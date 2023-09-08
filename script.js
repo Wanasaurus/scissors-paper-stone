@@ -14,3 +14,8 @@ function getComputerChoice() {
         return "Stone";
     }
 }
+
+const computerSelection = getComputerChoice();
+
+
+
