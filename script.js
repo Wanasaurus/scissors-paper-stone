@@ -21,8 +21,27 @@ function playRound (playerSelect, computerSelect) {
 
     switch(true) {
         case (playerSelect == "Stone" && computerSelect == "Scissors"):
-            return "You won! Stone beats scissors.";
+            return "You win! Stone beats scissors.";
             break;
+        case (playerSelect == "Stone" && computerSelect == "Paper"):
+            return "You lose! Paper beats stone.";
+            break;
+        case (playerSelect == "Paper" && computerSelect == "Scissors"):
+            return "You lose! Scissors beats paper.";
+            break;
+        case (playerSelect == "Paper" && computerSelect == "Stone"):
+            return "You win! Paper beats stone.";
+            break;
+        case (playerSelect == "Scissors" && computerSelect == "Paper"):
+            return "You win! Scissors beats paper.";
+            break;
+        case (playerSelect == "Scissors" && computerSelect == "Stone"):
+            return "You lose! Stone beats scissors.";
+            break;
+        case (playerSelect == "Scissors" && computerSelect == "Scissors"):
+        case (playerSelect == "Paper" && computerSelect == "Paper"):    
+        case (playerSelect == "Stone" && computerSelect == "Stone"):
+            return "It's a tie!"
     }
 
 }
