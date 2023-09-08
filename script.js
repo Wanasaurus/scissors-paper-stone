@@ -18,7 +18,13 @@ function getComputerChoice() {
 const computerSelect = getComputerChoice();
 
 function playRound (playerSelect, computerSelect) {
-    
+
+    switch(true) {
+        case (playerSelect == "Stone" && computerSelect == "Scissors"):
+            return "You won! Stone beats scissors.";
+            break;
+    }
+
 }
 
 
