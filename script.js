@@ -23,24 +23,24 @@ function playRound (playerSelect, computerSelect) {
         case (playerSelect == "stone" && computerSelect == "scissors"):
             return "You win! Stone beats scissors.";
             break;
-        case (playerSelect == "Stone" && computerSelect == "Paper"):
+        case (playerSelect == "stone" && computerSelect == "paper"):
             return "You lose! Paper beats stone.";
             break;
-        case (playerSelect == "Paper" && computerSelect == "Scissors"):
+        case (playerSelect == "paper" && computerSelect == "scissors"):
             return "You lose! Scissors beats paper.";
             break;
-        case (playerSelect == "Paper" && computerSelect == "Stone"):
+        case (playerSelect == "paper" && computerSelect == "stone"):
             return "You win! Paper beats stone.";
             break;
-        case (playerSelect == "Scissors" && computerSelect == "Paper"):
+        case (playerSelect == "scissors" && computerSelect == "paper"):
             return "You win! Scissors beats paper.";
             break;
-        case (playerSelect == "Scissors" && computerSelect == "Stone"):
+        case (playerSelect == "scissors" && computerSelect == "stone"):
             return "You lose! Stone beats scissors.";
             break;
-        case (playerSelect == "Scissors" && computerSelect == "Scissors"):
-        case (playerSelect == "Paper" && computerSelect == "Paper"):    
-        case (playerSelect == "Stone" && computerSelect == "Stone"):
+        case (playerSelect == "scissors" && computerSelect == "scissors"):
+        case (playerSelect == "paper" && computerSelect == "paper"):    
+        case (playerSelect == "stone" && computerSelect == "stone"):
             return "It's a tie!"
     }
 
