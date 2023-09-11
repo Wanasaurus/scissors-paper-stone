@@ -1,4 +1,4 @@
-let playerSelect = prompt("Let's play scissors paper stone! Please enter one of three options: scissors, paper, stone");
+let playerSelect = prompt("Let's play scissors paper stone! Please enter one of three options: scissors, paper, stone").toLowerCase();
 
 if (playerSelect == null || playerSelect == "") {
     alert("That's OK, come play another day.")
@@ -7,11 +7,11 @@ if (playerSelect == null || playerSelect == "") {
 function getComputerChoice() {
     let choice = Math.floor(Math.random() * 3);
     if (choice === 0) {
-        return "Scissors";
+        return "scissors";
     } else if (choice === 1) {
-        return "Paper";
+        return "paper";
     } else if (choice === 2) {
-        return "Stone";
+        return "stone";
     }
 }
 
@@ -20,7 +20,7 @@ const computerSelect = getComputerChoice();
 function playRound (playerSelect, computerSelect) {
 
     switch(true) {
-        case (playerSelect == "Stone" && computerSelect == "Scissors"):
+        case (playerSelect == "stone" && computerSelect == "scissors"):
             return "You win! Stone beats scissors.";
             break;
         case (playerSelect == "Stone" && computerSelect == "Paper"):
@@ -46,5 +46,5 @@ function playRound (playerSelect, computerSelect) {
 
 }
 
-console.log(playRound(playerSelect, computerSelect));
+console.log(playRound(playerSelect, computerSelect)); 
 
