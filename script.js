@@ -1,7 +1,11 @@
-let playerSelect = prompt("Let's play scissors paper stone! Please enter one of three options: scissors, paper, stone").toLowerCase();
+function getPlayerChoice() {
+    let choice = prompt("Let's play scissors paper stone! Please enter one of three options: scissors, paper, stone").toLowerCase();
 
-if (playerSelect == null || playerSelect == "") {
+    if (choice == null || choice == "") {
     alert("That's OK, come play another day.")
+    } else {
+        return choice;
+    }
 }
 
 function getComputerChoice() {
@@ -14,6 +18,7 @@ function getComputerChoice() {
         return "stone";
     }
 }
+const playerSelect = getPlayerChoice();
 
 const computerSelect = getComputerChoice();
 
@@ -46,20 +51,12 @@ function playRound (playerSelect, computerSelect) {
 
 }
 
-console.log(playRound(playerSelect, computerSelect)); 
+console.log(playRound(playerSelect, computerSelect));
 
-playerSelect;
+getPlayerChoice();
 getComputerChoice();
-console.log(playRound(playerSelect, computerSelect)); 
+console.log(playRound(playerSelect, computerSelect));
 
-playerSelect;
+getPlayerChoice();
 getComputerChoice();
-console.log(playRound(playerSelect, computerSelect)); 
-
-playerSelect;
-getComputerChoice();
-console.log(playRound(playerSelect, computerSelect)); 
-
-playerSelect;
-getComputerChoice();
-console.log(playRound(playerSelect, computerSelect)); 
+console.log(playRound(playerSelect, computerSelect));
