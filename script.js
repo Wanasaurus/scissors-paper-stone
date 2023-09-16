@@ -60,3 +60,11 @@ console.log(playRound(playerSelect, computerSelect));
 playerSelect = getPlayerChoice();
 computerSelect = getComputerChoice();
 console.log(playRound(playerSelect, computerSelect));
+
+playerSelect = getPlayerChoice();
+computerSelect = getComputerChoice();
+console.log(playRound(playerSelect, computerSelect));
+
+playerSelect = getPlayerChoice();
+computerSelect = getComputerChoice();
+console.log(playRound(playerSelect, computerSelect));
