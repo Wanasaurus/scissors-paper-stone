@@ -53,10 +53,10 @@ function playRound (playerSelect, computerSelect) {
 
 console.log(playRound(playerSelect, computerSelect));
 
-getPlayerChoice();
-getComputerChoice();
+playerSelect = getPlayerChoice();
+computerSelect = getComputerChoice();
 console.log(playRound(playerSelect, computerSelect));
 
-getPlayerChoice();
-getComputerChoice();
+playerSelect = getPlayerChoice();
+computerSelect = getComputerChoice();
 console.log(playRound(playerSelect, computerSelect));
