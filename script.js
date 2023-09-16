@@ -18,9 +18,9 @@ function getComputerChoice() {
         return "stone";
     }
 }
-const playerSelect = getPlayerChoice();
+let playerSelect = getPlayerChoice();
 
-const computerSelect = getComputerChoice();
+let computerSelect = getComputerChoice();
 
 function playRound (playerSelect, computerSelect) {
 
