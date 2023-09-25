@@ -1,12 +1,15 @@
 function getPlayerChoice() {
-    let choice = prompt("Let's play scissors paper stone! Please enter one of three options: scissors, paper, stone").toLowerCase();
 
-    if (choice == null || choice == "") {
-    alert("That's OK, come play another day.")
+    let choice = prompt("Let's play scissors paper stone! Please enter one of three options: scissors, paper, stone");
+    if (choice === null || choice === ""){
+      alert("Thats OK, come play again another day.");
+    } else if (choice.toLowerCase() && (choice.toLowerCase() == "scissors" || choice.toLowerCase() == "paper" || choice.toLowerCase() == "stone")){
+      return choice.toLowerCase();
     } else {
-        return choice;
+      alert("Oops! You must have made a typo.");  
+        
     }
-}
+    }
 
 function getComputerChoice() {
     let choice = Math.floor(Math.random() * 3);
