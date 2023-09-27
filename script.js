@@ -25,31 +25,38 @@ let playerSelect = getPlayerChoice();
 
 let computerSelect = getComputerChoice();
 
+let playerScore = 0;
+
+let computerScore = 0;
+
 function playRound (playerSelect, computerSelect) {
 
     switch(true) {
         case (playerSelect == "stone" && computerSelect == "scissors"):
-            return "You win! Stone beats scissors.";
+            return `You win! Stone beats scissors. You get ${++playerScore} points.`;
             break;
         case (playerSelect == "stone" && computerSelect == "paper"):
-            return "You lose! Paper beats stone.";
+            return `You lose! Paper beats stone. The computer gets ${++computerScore} points.`;
             break;
         case (playerSelect == "paper" && computerSelect == "scissors"):
-            return "You lose! Scissors beats paper.";
+            return `You lose! Scissors beats paper. The computer gets ${++computerScore} points.`;
             break;
         case (playerSelect == "paper" && computerSelect == "stone"):
-            return "You win! Paper beats stone.";
+            return `You win! Paper beats stone. You get ${++playerScore} points.`;
             break;
         case (playerSelect == "scissors" && computerSelect == "paper"):
-            return "You win! Scissors beats paper.";
+            return `You win! Scissors beats paper. You get ${++playerScore} points.`;
             break;
         case (playerSelect == "scissors" && computerSelect == "stone"):
-            return "You lose! Stone beats scissors.";
+            return `You lose! Stone beats scissors. The computer gets ${++computerScore} points.`;
             break;
         case (playerSelect == "scissors" && computerSelect == "scissors"):
         case (playerSelect == "paper" && computerSelect == "paper"):    
         case (playerSelect == "stone" && computerSelect == "stone"):
             return "It's a tie!"
+            break;
+        default:
+            return "Consider this round void.";    
     }
 
 }
