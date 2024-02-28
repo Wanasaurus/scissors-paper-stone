@@ -11,6 +11,18 @@
     //}
     //}
 
+//Event listeners for three buttons
+
+let scissorsButton = document.querySelector("#scissors");
+console.log("Scissors");
+
+let paperButton = document.querySelector("#paper");
+console.log("Paper");
+
+let stoneButton = document.querySelector("#stone");
+console.log("Stone");
+
+
 function getComputerChoice() {
     let choice = Math.floor(Math.random() * 3);
     if (choice === 0) {
