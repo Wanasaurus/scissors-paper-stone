@@ -14,13 +14,16 @@
 //Event listeners for three buttons
 
 let scissorsButton = document.querySelector("#scissors");
-console.log("Scissors");
+scissorsButton.addEventListener("click", () => {console.log("Scissors");})
+
 
 let paperButton = document.querySelector("#paper");
-console.log("Paper");
+paperButton.addEventListener("click", () => {console.log("Paper");})
+
 
 let stoneButton = document.querySelector("#stone");
-console.log("Stone");
+stoneButton.addEventListener("click", () => {console.log("Stone");})
+
 
 
 function getComputerChoice() {
