@@ -1,16 +1,3 @@
-//function getPlayerChoice() {
-
-    //let choice = prompt("Let's play scissors paper stone! Please enter one of three options: scissors, paper, stone");
-    //if (choice === null || choice === ""){
-      //alert("Thats OK, come play again another day.");
-    //} else if (choice.toLowerCase() && (choice.toLowerCase() == "scissors" || choice.toLowerCase() == "paper" || choice.toLowerCase() == "stone")){
-      //return choice.toLowerCase();
-    //} else {
-      //alert("Oops! You must have made a typo.");  
-        
-    //}
-    //}
-
 //Event listeners for three buttons
 
 let scissorsButton = document.querySelector("#scissors");
@@ -24,7 +11,18 @@ paperButton.addEventListener("click", () => {console.log("Paper");})
 let stoneButton = document.querySelector("#stone");
 stoneButton.addEventListener("click", () => {console.log("Stone");})
 
+function getPlayerChoice() {
 
+    let choice = prompt("Let's play scissors paper stone! Please enter one of three options: scissors, paper, stone");
+    if (choice === null || choice === ""){
+      alert("Thats OK, come play again another day.");
+    } else if (choice.toLowerCase() && (choice.toLowerCase() == "scissors" || choice.toLowerCase() == "paper" || choice.toLowerCase() == "stone")){
+      return choice.toLowerCase();
+    } else {
+      alert("Oops! You must have made a typo.");  
+        
+    }
+    }
 
 function getComputerChoice() {
     let choice = Math.floor(Math.random() * 3);
