@@ -1,17 +1,17 @@
 //Event listeners for three buttons
 
 let scissorsButton = document.querySelector("#scissors");
-scissorsButton.addEventListener("click", playerChoice);
+scissorsButton.addEventListener("click", getPlayerChoice);
 
 
 let paperButton = document.querySelector("#paper");
-paperButton.addEventListener("click", playerChoice);
+paperButton.addEventListener("click", getPlayerChoice);
 
 
 let stoneButton = document.querySelector("#stone");
-stoneButton.addEventListener("click", playerChoice);
+stoneButton.addEventListener("click", getPlayerChoice);
 
-function playerChoice(event) {
+function getPlayerChoice(event) {
 
     //let choice = prompt("Let's play scissors paper stone! Please enter one of three options: scissors, paper, stone");
     //if (choice === null || choice === ""){
