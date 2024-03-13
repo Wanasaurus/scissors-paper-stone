@@ -11,6 +11,8 @@ paperButton.addEventListener("click", getPlayerChoice);
 let stoneButton = document.querySelector("#stone");
 stoneButton.addEventListener("click", getPlayerChoice);
 
+let playerSelect = "";
+
 function getPlayerChoice(event) {
 
     //let choice = prompt("Let's play scissors paper stone! Please enter one of three options: scissors, paper, stone");
@@ -22,7 +24,9 @@ function getPlayerChoice(event) {
       //alert("Oops! You must have made a typo.");  
         
     //}
-    console.log(event.target.id);
+    //console.log(event.target.id);
+    playerSelect = event.target.id;
+    return playerSelect;
 
     }
 
@@ -36,47 +40,47 @@ function getComputerChoice() {
         return "stone";
     }
 }
-// //let playerSelect = getPlayerChoice();
 
-// let computerSelect = getComputerChoice();
 
-// let playerScore = 0;
+let computerSelect = getComputerChoice();
 
-// let computerScore = 0;
+let playerScore = 0;
 
-// function playRound (playerSelect, computerSelect) {
+let computerScore = 0;
 
-//     switch(true) {
-//         case (playerSelect == "stone" && computerSelect == "scissors"):
-//             return `You win! Stone beats scissors. You get ${++playerScore} points.`;
-//             break;
-//         case (playerSelect == "stone" && computerSelect == "paper"):
-//             return `You lose! Paper beats stone. The computer gets ${++computerScore} points.`;
-//             break;
-//         case (playerSelect == "paper" && computerSelect == "scissors"):
-//             return `You lose! Scissors beats paper. The computer gets ${++computerScore} points.`;
-//             break;
-//         case (playerSelect == "paper" && computerSelect == "stone"):
-//             return `You win! Paper beats stone. You get ${++playerScore} points.`;
-//             break;
-//         case (playerSelect == "scissors" && computerSelect == "paper"):
-//             return `You win! Scissors beats paper. You get ${++playerScore} points.`;
-//             break;
-//         case (playerSelect == "scissors" && computerSelect == "stone"):
-//             return `You lose! Stone beats scissors. The computer gets ${++computerScore} points.`;
-//             break;
-//         case (playerSelect == "scissors" && computerSelect == "scissors"):
-//         case (playerSelect == "paper" && computerSelect == "paper"):    
-//         case (playerSelect == "stone" && computerSelect == "stone"):
-//             return "It's a tie!"
-//             break;
-//         default:
-//             return "Consider this round void.";    
-//     }
+function playRound (playerSelect, computerSelect) {
 
-// }
+    switch(true) {
+        case (playerSelect == "stone" && computerSelect == "scissors"):
+            return `You win! Stone beats scissors. You get ${++playerScore} points.`;
+            break;
+        case (playerSelect == "stone" && computerSelect == "paper"):
+            return `You lose! Paper beats stone. The computer gets ${++computerScore} points.`;
+            break;
+        case (playerSelect == "paper" && computerSelect == "scissors"):
+            return `You lose! Scissors beats paper. The computer gets ${++computerScore} points.`;
+            break;
+        case (playerSelect == "paper" && computerSelect == "stone"):
+            return `You win! Paper beats stone. You get ${++playerScore} points.`;
+            break;
+        case (playerSelect == "scissors" && computerSelect == "paper"):
+            return `You win! Scissors beats paper. You get ${++playerScore} points.`;
+            break;
+        case (playerSelect == "scissors" && computerSelect == "stone"):
+            return `You lose! Stone beats scissors. The computer gets ${++computerScore} points.`;
+            break;
+        case (playerSelect == "scissors" && computerSelect == "scissors"):
+        case (playerSelect == "paper" && computerSelect == "paper"):    
+        case (playerSelect == "stone" && computerSelect == "stone"):
+            return "It's a tie!"
+            break;
+        default:
+            return "Consider this round void.";    
+    }
 
-// console.log(playRound(playerSelect, computerSelect));
+}
+
+console.log(playRound(playerSelect, computerSelect));
 
 // //playerSelect = getPlayerChoice();
 // //computerSelect = getComputerChoice();
