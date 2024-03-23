@@ -75,8 +75,7 @@ function playRound (playerSelect, computerSelect) {
         case (playerSelect == "stone" && computerSelect == "stone"):
             return "It's a tie!"
             break;
-        default:
-            return "Consider this round void.";    
+        
     }
 
 }
