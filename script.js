@@ -25,8 +25,9 @@ function getPlayerChoice(event) {
         
     //}
     //console.log(event.target.id);
+    let compChoice = getComputerChoice();
     playerSelect = event.target.id;
-    return playerSelect;
+    playRound(playerSelect, compChoice);
 
     }
 
