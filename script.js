@@ -26,9 +26,10 @@ function getPlayerChoice(event) {
     //}
     //console.log(event.target.id);
     let compChoice = getComputerChoice();
+    console.log(`The computer picked ${compChoice}`);
     playerSelect = event.target.id;
-    playRound(playerSelect, compChoice);
-
+    console.log(`You picked ${playerSelect}`);
+    console.log(playRound(playerSelect, compChoice));
     }
 
 function getComputerChoice() {
@@ -80,23 +81,23 @@ function playRound (playerSelect, computerSelect) {
 
 }
 
-console.log(playRound(playerSelect, computerSelect));
+// console.log(playRound(playerSelect, computerSelect));
 
-// //playerSelect = getPlayerChoice();
-// //computerSelect = getComputerChoice();
-// //console.log(playRound(playerSelect, computerSelect));
+// playerSelect = getPlayerChoice();
+// computerSelect = getComputerChoice();
+// console.log(playRound(playerSelect, computerSelect));
 
-// //playerSelect = getPlayerChoice();
-// //computerSelect = getComputerChoice();
-// //console.log(playRound(playerSelect, computerSelect));
+// playerSelect = getPlayerChoice();
+// computerSelect = getComputerChoice();
+// console.log(playRound(playerSelect, computerSelect));
 
-// //playerSelect = getPlayerChoice();
-// //computerSelect = getComputerChoice();
-// //console.log(playRound(playerSelect, computerSelect));
+// playerSelect = getPlayerChoice();
+// computerSelect = getComputerChoice();
+// console.log(playRound(playerSelect, computerSelect));
 
-// //playerSelect = getPlayerChoice();
-// //computerSelect = getComputerChoice();
-// //console.log(playRound(playerSelect, computerSelect));
+// playerSelect = getPlayerChoice();
+// computerSelect = getComputerChoice();
+// console.log(playRound(playerSelect, computerSelect));
 
 // if (playerScore > computerScore) {
 //     alert("Congrats, you're the winner! :D");
