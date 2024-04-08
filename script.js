@@ -26,7 +26,10 @@ function getPlayerChoice(event) {
     //}
     //console.log(event.target.id);
     let compChoice = getComputerChoice();
-    console.log(`The computer picked ${compChoice}`);
+    let compResults = document.createElement("p");
+    compResults.textContent = `The computer picked ${compChoice}`;
+    document.querySelector(".scoreboard").appendChild(compResults);
+
     playerSelect = event.target.id;
     console.log(`You picked ${playerSelect}`);
     console.log(playRound(playerSelect, compChoice));
