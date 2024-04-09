@@ -15,23 +15,17 @@ let playerSelect = "";
 
 function getPlayerChoice(event) {
 
-    //let choice = prompt("Let's play scissors paper stone! Please enter one of three options: scissors, paper, stone");
-    //if (choice === null || choice === ""){
-      //alert("Thats OK, come play again another day.");
-    //} else if (choice.toLowerCase() && (choice.toLowerCase() == "scissors" || choice.toLowerCase() == "paper" || choice.toLowerCase() == "stone")){
-      //return choice.toLowerCase();
-    //} else {
-      //alert("Oops! You must have made a typo.");  
-        
-    //}
-    //console.log(event.target.id);
     let compChoice = getComputerChoice();
     let compResults = document.createElement("p");
     compResults.textContent = `The computer picked ${compChoice}`;
     document.querySelector(".scoreboard").appendChild(compResults);
 
     playerSelect = event.target.id;
-    console.log(`You picked ${playerSelect}`);
+    let playerResults = document.createElement("p");
+    playerResults.textContent = `You picked ${playerSelect}`;
+    document.querySelector(".scoreboard").appendChild(playerResults);
+
+    //
     console.log(playRound(playerSelect, compChoice));
     }
 
