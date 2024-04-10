@@ -11,6 +11,8 @@ paperButton.addEventListener("click", getPlayerChoice);
 let stoneButton = document.querySelector("#stone");
 stoneButton.addEventListener("click", getPlayerChoice);
 
+//Player chooses
+
 let playerSelect = "";
 
 function getPlayerChoice(event) {
@@ -25,9 +27,13 @@ function getPlayerChoice(event) {
     playerResults.textContent = `You picked ${playerSelect}`;
     document.querySelector(".scoreboard").appendChild(playerResults);
 
-    //
-    console.log(playRound(playerSelect, compChoice));
+    let bothResults = document.createElement("p");
+    bothResults.textContent = playRound(playerSelect, compChoice);
+    document.querySelector(".scoreboard").appendChild(bothResults);
+
     }
+
+//Computer chooses    
 
 function getComputerChoice() {
     let choice = Math.floor(Math.random() * 3);
@@ -40,6 +46,7 @@ function getComputerChoice() {
     }
 }
 
+//One round of game
 
 let computerSelect = getComputerChoice();
 
