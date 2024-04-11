@@ -83,8 +83,16 @@ function playRound (playerSelect, computerSelect) {
         
     }
 
+    if (playerScore === 5) {
+        alert("Congrats, you're the winner! :D");
+    } else if (computerScore === 5) {
+        alert("The computer won, better luck next time!")
+    } 
+
 }
 
+
+
 // console.log(playRound(playerSelect, computerSelect));
 
 // playerSelect = getPlayerChoice();
@@ -103,10 +111,4 @@ function playRound (playerSelect, computerSelect) {
 // computerSelect = getComputerChoice();
 // console.log(playRound(playerSelect, computerSelect));
 
-// if (playerScore > computerScore) {
-//     alert("Congrats, you're the winner! :D");
-// } else if (computerScore > playerScore) {
-//     alert("The computer won, better luck next time!")
-// } else {
-//     alert("There is no clear winner. Try the game all over again!")
-// }   
+
