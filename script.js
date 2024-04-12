@@ -83,15 +83,13 @@ function playRound (playerSelect, computerSelect) {
         
     }
 
-    if (playerScore === 5) {
-        alert("Congrats, you're the winner! :D");
-    } else if (computerScore === 5) {
-        alert("The computer won, better luck next time!")
-    } 
-
 }
 
-
+if (playerScore === 5) {
+    alert("Congrats, you're the winner! :D");
+} else if (computerScore === 5) {
+    alert("The computer won, better luck next time!")
+} 
 
 // console.log(playRound(playerSelect, computerSelect));
 
