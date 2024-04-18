@@ -1,8 +1,10 @@
 body {
+
     text-align: center;
 }
 
 p {
+
     font-size: 1.2em;
     
 }
@@ -10,7 +12,10 @@ p {
 #scissors,
 #paper,
 #stone {
-    margin: 1em;
+    
+    margin: 0.5em 1em;
     padding: 0.5em;
     font-size: 2em;
+    border-radius: 25px;
+    
 }
