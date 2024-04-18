@@ -2,10 +2,15 @@ body {
     text-align: center;
 }
 
+p {
+    font-size: 1.2em;
+    
+}
+
 #scissors,
 #paper,
 #stone {
     margin: 1em;
-    padding: 1em;
-    font-size: 2rem;
+    padding: 0.5em;
+    font-size: 2em;
 }
