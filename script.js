@@ -32,9 +32,13 @@ function getPlayerChoice(event) {
     document.querySelector(".scoreboard").appendChild(bothResults);
 
     if (playerScore === 5) {
-        alert("Congrats, you're the winner! :D");
+        alert(`Congrats, you're the winner! :D 
+    
+        Refresh the page to play again.`);
     } else if (computerScore === 5) {
-        alert("The computer won, better luck next time!")
+        alert(`The computer won, better luck next time!
+    
+        Refresh the page to try again.`)
     } 
 
 }
