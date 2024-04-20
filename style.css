@@ -27,3 +27,14 @@ p {
     background-color: thistle;
     transition: 0.7s;
 }
+
+#scissors:focus,
+#paper:focus,
+#stone:focus {
+
+    outline-color: transparent;
+    outline-style: solid;
+    box-shadow: 0 0 0 4px orchid;
+    transition: 0.7s;
+
+}
