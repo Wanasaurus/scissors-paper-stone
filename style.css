@@ -34,7 +34,16 @@ p {
 
     outline-color: transparent;
     outline-style: solid;
-    box-shadow: 0 0 0 4px orchid;
+    box-shadow: 0 0 0 4px blue;
     transition: 0.7s;
+
+}
+
+#scissors:active,
+#paper:active,
+#stone:active {
+
+    background-color: red;
+
 
 }
