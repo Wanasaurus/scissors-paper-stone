@@ -22,6 +22,7 @@ p {
     border-radius: 25px;
     color: #ffffff;
     border: none;
+    font-family: "Helvetica", sans-serif;
 
 }
 
@@ -68,16 +69,16 @@ p {
     transition: 0.7s;
 }
 
-/* #scissors:focus,
+#scissors:focus,
 #paper:focus,
 #stone:focus {
 
     outline-color: transparent;
     outline-style: solid;
-    box-shadow: 0 0 0 4px blue;
+    box-shadow: 0 0 0 4px #ffffff;
     transition: 0.7s;
 
-} */
+}
 
 /*#scissors:active,
 #paper:active,
