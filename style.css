@@ -1,11 +1,14 @@
 body {
 
     text-align: center;
+    background-color: #000000;
+    color: #ffffff;
 }
 
 p {
 
     font-size: 1.2em;
+    font-family: "Helvetica", sans-serif;
     
 }
 
@@ -28,7 +31,7 @@ p {
     transition: 0.7s;
 }
 
-#scissors:focus,
+/* #scissors:focus,
 #paper:focus,
 #stone:focus {
 
@@ -37,13 +40,13 @@ p {
     box-shadow: 0 0 0 4px blue;
     transition: 0.7s;
 
-}
+} */
 
-#scissors:active,
+/*#scissors:active,
 #paper:active,
 #stone:active {
 
     background-color: red;
 
 
-}
+}*/
