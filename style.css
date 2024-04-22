@@ -47,15 +47,28 @@ p {
     
 }
 
-#scissors:hover,
-#paper:hover,
-#stone:hover {
+#scissors:hover {
 
-    background-color: thistle;
+    background-color: #ffffff;
+    color: #062F4F;
     transition: 0.7s;
 }
 
-#scissors:focus,
+#paper:hover {
+
+    background-color: #ffffff;
+    color: #813772;
+    transition: 0.7s;
+}
+
+#stone:hover {
+
+    background-color: #ffffff;
+    color: #B82601;
+    transition: 0.7s;
+}
+
+/* #scissors:focus,
 #paper:focus,
 #stone:focus {
 
@@ -64,7 +77,7 @@ p {
     box-shadow: 0 0 0 4px blue;
     transition: 0.7s;
 
-}
+} */
 
 /*#scissors:active,
 #paper:active,
