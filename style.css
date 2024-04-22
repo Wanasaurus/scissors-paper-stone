@@ -21,7 +21,7 @@ p {
     font-size: 2em;
     border-radius: 25px;
     color: #ffffff;
-    
+    border: none;
 
 }
 
@@ -55,7 +55,7 @@ p {
     transition: 0.7s;
 }
 
-/* #scissors:focus,
+#scissors:focus,
 #paper:focus,
 #stone:focus {
 
@@ -64,7 +64,7 @@ p {
     box-shadow: 0 0 0 4px blue;
     transition: 0.7s;
 
-} */
+}
 
 /*#scissors:active,
 #paper:active,
