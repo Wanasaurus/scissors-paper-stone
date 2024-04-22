@@ -20,6 +20,30 @@ p {
     padding: 0.5em;
     font-size: 2em;
     border-radius: 25px;
+    color: #ffffff;
+    
+
+}
+
+#scissors
+
+{
+
+    background-color: #062F4F;
+    
+}
+
+
+#paper
+
+{
+    background-color: #813772;
+    
+}
+
+#stone {
+    
+    background-color: #B82601;
     
 }
 
