@@ -31,9 +31,9 @@ function getPlayerChoice(event) {
     bothResults.textContent = playRound(playerSelect, compChoice);
     document.querySelector(".scoreboard").appendChild(bothResults);
 
-    if (playerScore === 5) {
+    if (playerScore === 3) {
         alert("Congrats, you're the winner! :D\nRefresh the page to play again.");
-    } else if (computerScore === 5) {
+    } else if (computerScore === 3) {
         alert("The computer won, better luck next time!\nRefresh the page to try again.")
     } 
 
